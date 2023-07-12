@@ -193,7 +193,7 @@ int main (int argc, char *argv[])
     //     and to call the function init_data, which loads the thermodynamic parameters into memory
 
     // configuration file, the path should be relative to the location of this executable
-    char config_file[200];
+    char config_file[300];
     strcpy (config_file, SIMFOLD_HOME "/params/multirnafold.conf");
 
     // what to fold: RNA or DNA
@@ -271,14 +271,14 @@ void printUsage(){
 	printf ("\t\t() restricted base pair\n");
 	printf ("\t\t _ no restriction\n");
 */
-	printf("Usage ./HFold --s <sequence> --r <structure> [--o </path/to/file>]\n");
+	printf("Usage HFold --s <sequence> --r <structure> [--o </path/to/file>]\n");
 	printf("or\n");
-	printf("Usage ./HFold --i </path/to/file> [--o </path/to/file>]\n");
+	printf("Usage HFold --i </path/to/file> [--o </path/to/file>]\n");
 	printf ("  Restricted structure symbols:\n");
 	printf ("    () restricted base pair\n");
 	printf ("    _ no restriction\n");
 	printf("Example:\n");
-	printf("./HFold --s \"GCAACGAUGACAUACAUCGCUAGUCGACGC\" --r \"(____________________________)\"\n");
-	printf("./HFold --i \"/home/username/Desktop/myinputfile.txt\" --o \"/home/username/Desktop/some_folder/outputfile.txt\"\n");
+	printf("HFold --s \"GCAACGAUGACAUACAUCGCUAGUCGACGC\" --r \"(____________________________)\"\n");
+	printf("HFold --i \"/home/username/Desktop/myinputfile.txt\" --o \"/home/username/Desktop/some_folder/outputfile.txt\"\n");
 	printf("Please read README for more details\n");
 }
